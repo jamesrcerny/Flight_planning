@@ -1,0 +1,26 @@
+<Demo1>:
+    md_bg_color: 0.1, 0.3, 0.6, 1
+    MDLabel:
+        text: 'Screen2'
+        halign: "center"
+    MDButton:
+        pos_hint: {"center_x": 0.5, "center_y": 0.5}
+        style: "filled"
+        on_release: root.manager.current = "demo2"
+
+        MDButtonText:
+            text: "go to screen 2"
+
+<Demo2>:
+    md_bg_color: 0.1, 0.3, 0.6, 1
+    MDLabel:
+        text: 'Screen2'
+        halign: "center"
+    MDButton:
+        pos_hint: {"center_x": 0.5, "center_y": 0.5}
+        style: "filled"
+        on_release: root.manager.current = "demo1"
+
+        MDButtonText:
+            text: "go to screen 1"
+            
